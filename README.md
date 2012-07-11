@@ -49,6 +49,12 @@ var config = simba.getConfig();
 $ npm test
 ```
 
+## Documentation
+
+Documentation is [here](https://github.com/cbou/simba.js/blob/master/doc/api.md) and can be generate with:
+
+    $ npm run-script documentation
+
 ## License
 
 (The MIT License)

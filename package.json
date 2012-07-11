@@ -21,7 +21,7 @@
   , "license": "MIT"
   , "scripts": { 
     "test": "./node_modules/mocha/bin/mocha test/*-test.js"
-    , "documentation": "./node_modules/markdox/bin/markdox -o doc/api.md lib/simba.js"
+    , "documentation": "./node_modules/markdox/bin/markdox -o doc/api.md lib/simba.js lib/kiara.js"
   }
   , "engines": { "node": ">= 0.6.8 < 0.7.0" }
 }

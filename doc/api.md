@@ -4,11 +4,11 @@
 
 
 
-
-## Simba(parent)
+## Simba
 Simba constructor
-If no parent is given, this Simba will be a root.
+Simba is the container of Kiara
 
+If no parent is given, this Simba will be a root.
 
 
 
@@ -30,7 +30,7 @@ If no parent is given, this Simba will be a root.
 
 
 ## add(name, type, value, required, description)
-Add a new item
+Add a new kiara
 
 
 
@@ -38,22 +38,22 @@ Add a new item
 
 ### Params: 
 
-* **String** *name* Name of the item
+* **String** *name* Name of the kiara
 
-* **Function** *type* Type of the item (String, Boolean, Function, Number, Object)
+* **Function** *type* Type of the kiara (String, Boolean, Function, Number, Object)
 
-* **mixed** *value* Value of the item
+* **mixed** *value* Value of the kiara
 
-* **Boolean** *required* True if item value is required
+* **Boolean** *required* True if kiara value is required
 
-* **String** *description* Description of the item
+* **String** *description* Description of the kiara
 
 
 
 
 ### Return:
 
-* **Item** The item
+* **Kiara** The kiara
 
 
 
@@ -61,7 +61,7 @@ Add a new item
 
 
 ## children()
-Return the Simba of the last added item
+Return the Simba of the last added kiara
 
 
 
@@ -71,7 +71,7 @@ Return the Simba of the last added item
 
 ### Return:
 
-* **Simba** Simba of the last added item
+* **Simba** Simba of the last added kiara
 
 
 
@@ -155,4 +155,139 @@ Override the values of the Simba
 
 
 <!-- End lib/simba.js -->
+
+
+
+<!-- Start lib/kiara.js -->
+
+
+
+## Kiara
+Kiara constructor
+Kiara represent a configuration value
+
+
+
+
+### Params: 
+
+* **Simba** *parent* Parent of the kiara
+
+* **String** *name* Name of the kiara
+
+* **Function** *type* Type of the kiara (String, Boolean, Function, Number, Object)
+
+* **mixed** *value* Value of the kiara
+
+* **Boolean** *required* True if kiara value is required
+
+* **String** *description* Description of the kiara
+
+
+
+
+### Return:
+
+* **Kiara** The kiara
+
+
+
+
+
+
+## getValue()
+Return the value of the Kiara
+
+
+
+
+
+
+
+### Return:
+
+* **mixed** The value of the kiara
+
+
+
+
+
+
+## toJson()
+Return the json representation of the kiara
+If the Kiara contains other kiara, it will go recursively
+
+
+
+
+
+
+
+### Return:
+
+* **Object** The json representation of the kiara
+
+
+
+
+
+
+## overrideValues()
+Override the values of the kiara
+If the Kiara contains other kiara, it will go recursively
+
+
+
+
+
+
+
+### Return:
+
+* **Kiara** The kiara
+
+
+
+
+
+
+## add()
+Call parent.add function
+
+
+
+
+
+
+
+
+
+
+
+## children()
+Call parent.children function
+
+
+
+
+
+
+
+
+
+
+
+## end()
+Call parent.end function
+
+
+
+
+
+
+
+
+
+
+<!-- End lib/kiara.js -->
 

@@ -4,28 +4,34 @@ Simba.js is a simple but powerful configuration tool
 
 ## Installation
 
-  $ npm install simba
+```bash
+$ npm install simba
+```
 
 ## Quick Start
 
-    var Simba = require('simba');
-    var root = new Simba();
+```javascript
+var Simba = require('simba');
+var root = new Simba();
 
-    root
-      .add('db')
-      .children() 
-        .add('host', String, 'localhost')
-        .add('port', String)
-        .add('username', String)
-        .add('password', String)
-      .end()
-    ;
-    
-    var config = root.getConfig()
+root
+  .add('db')
+  .children() 
+    .add('host', String, 'localhost')
+    .add('port', String)
+    .add('username', String)
+    .add('password', String)
+  .end()
+;
+
+var config = root.getConfig();
+```
 
 ## Test
 
-    $ npm test
+```bash
+$ npm test
+```
 
 ## License
 

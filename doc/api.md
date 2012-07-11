@@ -30,7 +30,7 @@ If no parent is given, this Simba will be a root.
 ## add(name, type, value, required, description)
 Add a new item
 
----
+
 
 
 
@@ -61,7 +61,7 @@ Add a new item
 ## children()
 Return the Simba of the last added item
 
----
+
 
 
 
@@ -95,7 +95,7 @@ Return the parent of the Simba
 ## get()
 Return the value from a key
 
----
+
 
 
 
@@ -129,7 +129,7 @@ Return the config of the Simba
 ## overrideValues(object)
 Override the values of the Simba
 
----
+
 
 
 

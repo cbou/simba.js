@@ -12,9 +12,9 @@ $ npm install simba
 
 ```javascript
 var Simba = require('simba');
-var root = new Simba();
+var simba = new Simba();
 
-root
+simba
   .add('db')
   .children() 
     .add('host', String, 'localhost')
@@ -24,7 +24,16 @@ root
   .end()
 ;
 
-var config = root.getConfig();
+simba.overrideValues({
+  db: {
+    localhost: '127.0.0.1'
+    , port: 3306
+    , username: 'root'
+    , password: 'toor'
+  }
+});
+
+var config = simba.getConfig();
 ```
 
 ## Test

@@ -61,4 +61,29 @@ describe('Simba', function(){
       config.db.should.have.not.property('password');
     })
   })
+
+  describe('.overrideValues()', function(){
+    it('should override the value', function(){
+      var root = new Simba();
+      root
+        .add('db')
+        .children()
+          .add('hostname', String, 'localhost')
+        .end();
+
+      var config = root.getConfig();
+      config.should.have.property('db');
+      config.db.should.have.property('hostname', 'localhost');
+
+      root.overrideValues({
+        db: {
+          hostname: '127.0.0.1'
+        }
+      });
+
+      var config = root.getConfig();
+      config.should.have.property('db');
+      config.db.should.have.property('hostname', '127.0.0.1');
+    })
+  })
 });

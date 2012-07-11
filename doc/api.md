@@ -6,7 +6,8 @@
 
 ## Simba
 Simba constructor
-Simba is the container of Kiara
+
+Simba is the container of Kiara.
 
 If no parent is given, this Simba will be a root.
 
@@ -164,7 +165,8 @@ Override the values of the Simba
 
 ## Kiara
 Kiara constructor
-Kiara represent a configuration value
+
+Kiara represent a configuration value.
 
 
 

@@ -1,6 +1,6 @@
-# Simba.js
+# Simba
 
-Simba.js is a simple but powerful configuration tool
+Simba is a simple but powerful configuration tool
 
 ## Installation
 

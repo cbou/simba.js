@@ -1,6 +1,6 @@
 {
-  "name": "simba.js"
-  , "description": "Simba.js is a simple but powerful configuration tool"
+  "name": "simba"
+  , "description": "Simba is a simple but powerful configuration tool"
   , "version": "0.1.0"
   , "author": "Charles Bourasseau <charles.bourasseau@gmail.com>"
   , "main" : "lib/simba.js"

@@ -12,6 +12,7 @@
   , "devDependencies": {
     "mocha": ">= 1.3.0"
     , "should": ">= 0.6.3"
+    , "markdox": ">= 0.0.6"
   }
   , "keywords": ["configuo", "configure", "configuration", "config"]
   , "repository": {
@@ -20,6 +21,7 @@
   , "license": "MIT"
   , "scripts": { 
     "test": "./node_modules/mocha/bin/mocha test/*-test.js"
+    , "documentation": "./node_modules/markdox/bin/markdox -o doc/api.md lib/simba.js"
   }
   , "engines": { "node": ">= 0.6.8 < 0.7.0" }
 }

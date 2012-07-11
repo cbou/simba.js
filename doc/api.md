@@ -4,9 +4,11 @@
 
 
 
-## Simba
+
+## Simba(parent)
 Simba constructor
 If no parent is given, this Simba will be a root.
+
 
 
 
@@ -75,8 +77,10 @@ Return the Simba of the last added item
 
 
 
-## end
+
+## end()
 Return the parent of the Simba
+
 
 
 
@@ -109,8 +113,10 @@ Return the value from a key
 
 
 
-## getConfig
+
+## getConfig()
 Return the config of the Simba
+
 
 
 

@@ -141,6 +141,29 @@ Return the value from a key
 
 
 
+## set(The)
+Set the value a kiara
+
+
+
+
+
+### Params: 
+
+* **mixed** *The* value to set
+
+
+
+
+### Return:
+
+* **Simba** The simba
+
+
+
+
+
+
 ## getConfig()
 Return the config of the Simba
 
@@ -231,6 +254,29 @@ Return the value of the Kiara
 ### Return:
 
 * **mixed** The value of the kiara
+
+
+
+
+
+
+## setValue(The)
+Set the value of the Kiara
+
+
+
+
+
+### Params: 
+
+* **mixed** *The* value to set
+
+
+
+
+### Return:
+
+* **Kiara** The kiara
 
 
 

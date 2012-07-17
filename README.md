@@ -17,23 +17,40 @@ var simba = new Simba();
 simba
   .add('db')
   .children() 
-    .add('host', String, 'localhost')
-    .add('port', String)
-    .add('username', String)
-    .add('password', String)
+    .add('host', 'localhost')
+    .add('port')
+    .add('username')
+    .add('password')
   .end()
 ;
 
+console.log(simba.get('db').get('host')); // 'localhost'
+console.log(simba.get('db').get('port')); // undefined
+
+simba.db.port = 27017;
+console.log(simba.get('db').get('port')); // 27017
+
+console.log(simba.db.host); // localhost
+console.log(simba.db.get('host')); // localhost
+
 simba.overrideValues({
   db: {
-    localhost: '127.0.0.1'
+    host: '127.0.0.1'
     , port: 3306
     , username: 'root'
     , password: 'toor'
   }
 });
 
+console.log(simba.get('db').get('host')); // '127.0.0.1'
+console.log(simba.get('db').get('port')); // 3306
+
+console.log(simba.db.host); // 127.0.0.1
+console.log(simba.db.get('host')); // 127.0.0.1
+
 var config = simba.getConfig();
+
+console.log(config);
 /*
     { db: 
        { host: '127.0.0.1',

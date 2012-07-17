@@ -13,7 +13,9 @@ describe('Simba', function(){
     it('should add a new value', function(){
       var root = new Simba();
       root.add('db', 'myValue');
+
       root.get('db').should.equal('myValue');
+      root.db.should.equal('myValue');
     })
   })
 
@@ -21,7 +23,9 @@ describe('Simba', function(){
     it('should return a configuration object', function(){
       var root = new Simba();
       root.add('db', 'myValue');
+
       root.getConfig().should.have.property('db', 'myValue');
+      root.db.should.equal('myValue');
     })
   })
 
@@ -38,6 +42,8 @@ describe('Simba', function(){
 
         config.should.have.property('db');
         config.db.should.have.property('hostname', 'localhost');
+
+        root.db.hostname.should.equal('localhost');
       })
     })
   })
@@ -56,9 +62,11 @@ describe('Simba', function(){
 
       config.should.have.property('db');
       config.should.have.property('password', 'root');
-
       config.db.should.have.property('hostname', 'localhost');
       config.db.should.have.not.property('password');
+
+      root.password.should.equal('root');
+      root.db.hostname.should.equal('localhost');
     })
   })
 
@@ -72,8 +80,11 @@ describe('Simba', function(){
         .end();
 
       var config = root.getConfig();
+
       config.should.have.property('db');
       config.db.should.have.property('hostname', 'localhost');
+
+      root.db.hostname.should.equal('localhost');
 
       root.overrideValues({
         db: {
@@ -82,8 +93,11 @@ describe('Simba', function(){
       });
 
       var config = root.getConfig();
+      
       config.should.have.property('db');
       config.db.should.have.property('hostname', '127.0.0.1');
+
+      root.db.hostname.should.equal('127.0.0.1');
     })
   })
 });

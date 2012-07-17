@@ -182,7 +182,7 @@ Return the config of the Simba
 
 
 
-## overrideValues(object)
+## setConfig(object)
 Override the values of the Simba
 
 
@@ -302,7 +302,7 @@ If the Kiara contains other kiara, it will go recursively
 
 
 
-## overrideValues()
+## setConfig()
 Override the values of the kiara
 If the Kiara contains other kiara, it will go recursively
 

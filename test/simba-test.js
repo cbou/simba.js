@@ -70,7 +70,7 @@ describe('Simba', function(){
     })
   })
 
-  describe('.overrideValues()', function(){
+  describe('.setConfig()', function(){
     it('should override the value', function(){
       var root = new Simba();
       root
@@ -86,7 +86,7 @@ describe('Simba', function(){
 
       root.db.hostname.should.equal('localhost');
 
-      root.overrideValues({
+      root.setConfig({
         db: {
           hostname: '127.0.0.1'
         }

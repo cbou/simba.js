@@ -33,7 +33,7 @@ console.log(simba.get('db').get('port')); // 27017
 console.log(simba.db.host); // localhost
 console.log(simba.db.get('host')); // localhost
 
-simba.overrideValues({
+simba.setConfig({
   db: {
     host: '127.0.0.1'
     , port: 3306

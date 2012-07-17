@@ -60,7 +60,7 @@ If no parent is given, this Simba will be a root.
 
 
 
-## add(name, type, value, required, description)
+## add(name, value, description)
 Add a new kiara
 
 
@@ -71,11 +71,7 @@ Add a new kiara
 
 * **String** *name* Name of the kiara
 
-* **Function** *type* Type of the kiara (String, Boolean, Function, Number, Object)
-
 * **mixed** *value* Value of the kiara
-
-* **Boolean** *required* True if kiara value is required
 
 * **String** *description* Description of the kiara
 
@@ -207,11 +203,7 @@ Kiara represent a configuration value.
 
 * **String** *name* Name of the kiara
 
-* **Function** *type* Type of the kiara (String, Boolean, Function, Number, Object)
-
 * **mixed** *value* Value of the kiara
-
-* **Boolean** *required* True if kiara value is required
 
 * **String** *description* Description of the kiara
 

@@ -12,7 +12,7 @@ describe('Simba', function(){
   describe('.add(name, type, value)', function(){
     it('should add a new value', function(){
       var root = new Simba();
-      root.add('db', String, 'myValue');
+      root.add('db', 'myValue');
       root.get('db').should.equal('myValue');
     })
   })
@@ -20,7 +20,7 @@ describe('Simba', function(){
   describe('.getConfig()', function(){
     it('should return a configuration object', function(){
       var root = new Simba();
-      root.add('db', String, 'myValue');
+      root.add('db', 'myValue');
       root.getConfig().should.have.property('db', 'myValue');
     })
   })
@@ -32,7 +32,7 @@ describe('Simba', function(){
         root
           .add('db')
           .children()
-            .add('hostname', String, 'localhost');
+            .add('hostname', 'localhost');
 
         var config = root.getConfig();
 
@@ -48,9 +48,9 @@ describe('Simba', function(){
       root
         .add('db')
         .children()
-          .add('hostname', String, 'localhost')
+          .add('hostname', 'localhost')
         .end()
-        .add('password', String, 'root');
+        .add('password', 'root');
 
       var config = root.getConfig();
 
@@ -68,7 +68,7 @@ describe('Simba', function(){
       root
         .add('db')
         .children()
-          .add('hostname', String, 'localhost')
+          .add('hostname', 'localhost')
         .end();
 
       var config = root.getConfig();

@@ -17,7 +17,7 @@
   , "keywords": ["configuo", "configure", "configuration", "config"]
   , "repository": {
   }
-  , "main": "index"
+  , "main": "lib/simba"
   , "license": "MIT"
   , "scripts": { 
     "test": "./node_modules/mocha/bin/mocha test/*-test.js"

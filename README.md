@@ -1,6 +1,6 @@
 # Simba [![Build Status](https://secure.travis-ci.org/cbou/simba.js.png)](http://travis-ci.org/cbou/simba.js)
 
-Simba is a simple but powerful configuration tool
+Simba is a simple but powerful configuration tool for Node.js. It also run in a browser.
 
 ## Installation
 
